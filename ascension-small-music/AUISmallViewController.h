@@ -8,6 +8,7 @@
 
 #import <HSWidgets/HSWidgetViewController.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <MediaRemote/MediaRemote.h>
 
 #import "AUILabelView.h"
 

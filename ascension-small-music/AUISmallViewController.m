@@ -23,7 +23,7 @@
   [super viewWillAppear:animated];
 
   controller = [MPMusicPlayerController systemMusicPlayer];
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nowPlayingChanged) name:MPMusicPlayerControllerNowPlayingItemDidChangeNotification object:controller];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nowPlayingChanged) name:(__bridge NSString *)kMRMediaRemoteNowPlayingInfoDidChangeNotification object:controller];
   [self nowPlayingChanged];
 }
 
